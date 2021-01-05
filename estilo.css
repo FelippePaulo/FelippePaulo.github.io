@@ -1,0 +1,38 @@
+img
+{
+    width: 200px;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+aside
+{
+    width: 330px;
+    float: left;
+}
+
+main
+{
+    width: 670px;
+    float: left;
+}
+
+.titulo
+{
+    text-align: center;
+}
+
+.titulo-principal
+{
+    font-size: 2em;
+
+}
+
+.titulo-secundario
+{
+    font-size: 1.5em;
+    margin-top: -15px;
+}
