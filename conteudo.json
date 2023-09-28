@@ -1,0 +1,18 @@
+{ 
+    "titulo":{
+        "ptBr": "Bem-Vindo",
+        "eng": "Welcome"
+    },
+    "apresentacao":{
+        "ptBr": "Eu sou Felippe Paulo e esse e meu portifolio",
+        "eng": "Apresentacao em ingles"
+    },
+    "curriculo":{
+        "ptBr": "Currículo",
+        "eng": "Curriculum"
+    },
+    "projetos":{
+        "ptBr": "Projetos",
+        "eng": "Projects"
+    }
+}

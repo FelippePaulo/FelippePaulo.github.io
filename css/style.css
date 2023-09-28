@@ -1,0 +1,178 @@
+html, body, #canvas {
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  
+  
+}
+
+canvas{
+  position: absolute;
+  -webkit-filter: url("#turbulence");
+  filter: url("#turbulence");
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #074790 0%, #000000 100%);
+  overflow: hidden;
+;
+  /* filter: drop-shadow(0 0 10px white); */
+}
+
+#wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+/*texto principal*/
+.mainTitle {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.mainTitle h1 {
+    font-size: 4em;
+    margin-bottom: 0.1em;
+    color: #efeeee;
+}
+
+.mainTitle p {
+    position: relative;
+    font-size: 1.3em;
+    margin-top: 0;
+    color: #efeeee;
+}
+
+/* parte dos botoes */
+.buttons-link{
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top:7%;
+}
+.buttons-link div {
+    margin-bottom: 50px; 
+    transition: transform 0.3s;
+}
+
+.buttons-link div:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando o mouse passa por cima */
+}
+
+.buttons-link button img {
+  width: 80px; /* Defina a largura desejada para a imagem no botão */
+  height: 80px; /* Defina a altura desejada para a imagem no botão */
+}
+
+.buttons-link button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.buttons-link div p{
+  color: #efeeee;
+}
+
+a {
+  text-decoration: none !important; /* Remove o sublinhado após o link ser visitado */
+}
+
+a:hover{
+  text-decoration: none !important;
+}
+
+
+
+
+/*language switch*/
+.language-Switch{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    align-items: center;
+    display: flex;
+}
+
+.language {
+    position: relative;
+    margin-right: 5px; 
+    margin-left: 5px;
+    color: rgb(255, 254, 254);
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #211f49;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(218, 218, 218);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #104068;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1d1a2b;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  

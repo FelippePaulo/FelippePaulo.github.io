@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Felippe Paulo</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="wrapper">
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js'></script><script  src="js/onda.js"></script>
+
+    <iframe
+      frameborder="0"
+      height="100%"
+      width="100%"
+      src="./background.html"
+       
+      
+    >
+    </iframe>
+
+    <main>
+        <section class="mainTitle">
+            <div>
+                <h1 id = "entrance"></h1>
+            <div>
+            <div>
+                <p id = "apresentacao"></p>
+            </div>
+        </section>
+        <section class="buttons-link">
+            <div>
+                <a href="https://github.com/FelippePaulo" target="_blank">
+                    <button>
+                        <img src="img/icone-github.png" alt="#">
+                    </button>
+                    <p>Github</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/felippe-paulo-98014a278/" target="_blank">
+                    <button>
+                        <img src="img/icone-linkedin.png" alt="#">
+                    </button>
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div>
+                <button>
+                    <img src="img/icone-curriculo.png" alt="#">
+                </button>
+                <p id = "curriculo"></p>
+            </div>
+            <div>
+                <button>
+                    <img src="img/icone-projetos.png" alt="#">
+                </button>
+                <p id = "projetos"></p>
+            </div>
+        </section>
+        <div class="language-Switch">
+            <p class="language" id="ptbr">Pt-Br</p>
+            <label class="switch">
+                <input type="checkbox" id="languageSwitch">
+                <span class="slider round"></span>
+            </label>
+            <p class="language" id="eng">Eng</p>
+           
+        </div>
+    </main>
+    <script type="text/javascript">
+        
+        let divEntrance = document.querySelector("#entrance");
+        let divApresentacao = document.querySelector("#apresentacao");
+        let divCurriculo = document.querySelector("#curriculo");
+        let divProjetos = document.querySelector("#projetos");
+        let lang = 'ptBr';
+
+        //pegando arquivo json
+        fetch("conteudo.json").then((response) => {
+            response.json().then((conteudo) => { 
+                divEntrance.innerHTML = conteudo.titulo[lang];
+                divApresentacao.innerHTML = conteudo.apresentacao[lang]; 
+                divCurriculo.innerHTML = conteudo.curriculo[lang];
+                divProjetos.innerHTML = conteudo.projetos[lang];
+                languageSwitch.addEventListener('change', function() {
+                    if (this.checked) {
+                        lang = 'eng';
+                    } else {
+                        lang = 'ptBr';
+                    }
+                    divEntrance.innerHTML = conteudo.titulo[lang];
+                    divApresentacao.innerHTML = conteudo.apresentacao[lang];
+                    divCurriculo.innerHTML = conteudo.curriculo[lang];
+                    divProjetos.innerHTML = conteudo.projetos[lang];
+
+                });
+                
+            })
+        })
+    </script>
+</body>
+</html>
