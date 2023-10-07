@@ -15,7 +15,7 @@ canvas{
 }
 
 body {
-  height: 100vh;
+  height: 101vh;
   background: radial-gradient(ellipse at bottom, #074790 0%, #000000 100%);
   overflow: hidden;
 ;
