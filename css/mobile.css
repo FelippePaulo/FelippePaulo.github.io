@@ -55,6 +55,7 @@
   .buttons-link div {
       opacity: 0;
       margin-top: 50px; 
+      margin-bottom: 20px;
       transition: transform 0.3s;
   }
   
@@ -62,8 +63,8 @@
       transform: scale(1.1);
   }
   .buttons-link button img {
-    width: 160px; /* Defina a largura desejada para a imagem no botão */
-    height: 160px; /* Defina a altura desejada para a imagem no botão */
+    width: 130px; /* Defina a largura desejada para a imagem no botão */
+    height: 130px; /* Defina a altura desejada para a imagem no botão */
   }
   
   .buttons-link button {
