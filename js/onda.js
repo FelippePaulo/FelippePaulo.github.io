@@ -107,7 +107,6 @@ const rippleSettings = {
   };
   
   animation();
-  canvas.addEventListener('mousemove', canvasMouseOver);
-  canvas.addEventListener('click', canvasClick ,false);
-
-
+  
+  document.addEventListener('click', canvasClick ,false);
+  document.addEventListener('mousemove',canvasMouseOver)

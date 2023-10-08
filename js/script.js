@@ -21,4 +21,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000); // Atraso de 1 segundo antes de mostrar os botões
 }, 1000); // Atraso de 1 segundo antes de mostrar entrance e apresentacao
 });
-
