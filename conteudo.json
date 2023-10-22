@@ -12,7 +12,23 @@
         "eng": "Curriculum"
     },
     "projetos":{
-        "ptBr": "Projetos",
-        "eng": "Projects"
+        "ptBr": "Projetos (Em Breve)",
+        "eng": "Projects (Soon)"
+    },
+    "sobre":{
+        "ptBr": "Sobre",
+        "eng": "About me"
+    },
+    "contato":{
+        "ptBr": "Contato",
+        "eng": "Contact Info"
+    },
+    "contatoConteudo":{
+        "ptBr": "<p>Email: felippepaulo0606@gmail.com</p><p>Linkedin: https://www.linkedin.com/in/felippe-paulo-98014a278/</p>",
+        "eng": "<p>Email: felippepaulo0606@gmail.com</p><p>Linkedin: https://www.linkedin.com/in/felippe-paulo-98014a278/</p>"
+    },
+    "sobreConteudo":{
+        "ptBr": "Estudante de Sistemas de Informação em busca de oportunidades para iniciar uma carreira promissora no setor de tecnologia. Apaixonado por soluções inovadoras e pelo potencial transformador da área. Tenho o objetivo de desenvolver-me pessoal e profissionalmente, colocando em prática meus conhecimentos obtidos na faculdade e através de projetos pessoais. Buscando oportunidades como desenvolvedor, engenheiro de software e áreas correlatas.",
+        "eng": "Student of Information Systems looking for opportunities improve my career in the technology sector. Passionate about innovative solutions and the transformative potential of the field. I`m aiming to develop myself personally and professionally, applying the knowledge I have gained in college and through personal projects. I am seeking opportunities as a frelancer developer, software engineer, and related fields. I love working with Web Development and Machine Learnign."
     }
 }

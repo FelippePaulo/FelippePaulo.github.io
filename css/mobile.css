@@ -29,6 +29,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 80%;
+
   }
   
   .mainTitle h1 {
@@ -46,11 +47,15 @@
   
   .buttons-link {
     position: absolute;
-    top: 45%;
-    left: 10%;
+    top: 67%;
+    left:50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 70%;
+    height: 50%; 
+    gap: 0;
+    flex-direction: unset;
 }
 
 .buttons-link div {
@@ -78,4 +83,26 @@
   .buttons-link div p{
     color: #efeeee;
   }
+  .conteudoBtn {
+    text-align: center;
+    position: absolute;
+    left :50% ;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: row;
+    gap: 2em;
+  }
+  
+  .buttons-intel {
+    text-align: center;
+    position: absolute;
+    left :73% ;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
 }
+

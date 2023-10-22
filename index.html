@@ -22,7 +22,7 @@
     >
     </iframe>
     <main>
-        <section class="mainTitle">
+        <section class="mainTitle" id = 'section-mainTitle'>
             <div>
                 <h1 id = "entrance"></h1>
             <div>
@@ -30,7 +30,32 @@
                 <p id = "apresentacao"></p>
             </div>
         </section>
-        <section class="buttons-link">
+        <section class="buttons-intel" id = 'section-conteudo'>
+            <div>
+              
+                <button id="sobreBtn">
+                  <p id = "sobre">Sobre</p>
+                </button>
+            </div>
+            <div>
+                <button id="contatoBtn">
+                  <p id = "contato"></p>
+                </button>
+            </div>
+        </section>
+        <div id="conteudoSobre" class="conteudoBtn">
+            <p id="conteudoSobreP"></p>
+        </div>
+        
+        <div id="conteudoContato" class="conteudoBtn">
+            <p  id="conteudoContatoP"></p>
+        </div>
+        <div id="botaoRetorna" class="botao-retorna">
+           
+                <img src="img/return.png" alt="#">
+            
+        </div>
+        <section class="buttons-link" id="section-buttonsLink">
             <div>
                 <a href="https://github.com/FelippePaulo" target="_blank">
                     <button>
@@ -68,7 +93,6 @@
                 <span class="slider round"></span>
             </label>
             <p class="language" id="eng">Eng</p>
-           
         </div>
     </main>
     <script type="text/javascript">
@@ -76,6 +100,11 @@
         let divApresentacao = document.querySelector("#apresentacao");
         let divCurriculo = document.querySelector("#curriculo");
         let divProjetos = document.querySelector("#projetos");
+        let divSobre = document.querySelector("#sobre");
+        let divContato = document.querySelector("#contato");
+        let divConteudoSobre = document.querySelector("#conteudoSobreP");
+        let divConteudoContato = document.querySelector("#conteudoContatoP");
+        
         let lang = 'ptBr';
 
         //pegando arquivo json
@@ -85,6 +114,10 @@
                 divApresentacao.innerHTML = conteudo.apresentacao[lang]; 
                 divCurriculo.innerHTML = conteudo.curriculo[lang];
                 divProjetos.innerHTML = conteudo.projetos[lang];
+                divSobre.innerHTML = conteudo.sobre[lang];
+                divContato.innerHTML = conteudo.contato[lang];
+                divConteudoSobre.innerHTML = conteudo.sobreConteudo[lang];
+                divConteudoContato.innerHTML = conteudo.contatoConteudo[lang];
                 languageSwitch.addEventListener('change', function() {
                     if (this.checked) {
                         lang = 'eng';
@@ -95,6 +128,11 @@
                     divApresentacao.innerHTML = conteudo.apresentacao[lang];
                     divCurriculo.innerHTML = conteudo.curriculo[lang];
                     divProjetos.innerHTML = conteudo.projetos[lang];
+                    divSobre.innerHTML = conteudo.sobre[lang];
+                    divContato.innerHTML = conteudo.contato[lang];
+                    divConteudoSobre.innerHTML = conteudo.sobreConteudo[lang];
+                    divConteudoContato.innerHTML = conteudo.contatoConteudo[lang];
+                    
                 });
             })
         })
