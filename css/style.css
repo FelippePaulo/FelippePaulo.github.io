@@ -78,7 +78,9 @@ body {
   background: none;
   border: 1px solid white;
   border-width: 2px;
+  border-radius: 5px;
   height: 40px;
+  margin: 0px;
 }
 
 .buttons-intel div {
